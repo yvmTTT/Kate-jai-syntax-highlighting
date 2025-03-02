@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "language.dtd">
+<language name="JAI" version="1" kateversion="5.0" section="Sources" extensions="*.jai" mimetype="text/aaaaaaajai" priority="5">
+	<highlighting>
+	<list name="keywords">
+		<item>break</item>
+		<item>case</item>
+		<item>cast</item>
+		<item>code_of</item>
+		<item>continue</item>
+		<item>defer</item>
+		<item>else</item>
+		<item>enum</item>
+		<item>enum_flags</item>
+		<item>for</item>
+		<item>initializer_of</item>
+		<item>if</item>
+		<item>ifx</item>
+		<item>is_constant</item>
+		<item>inline</item>
+		<item>push_context</item>
+		<item>return</item>
+		<item>size_of</item>
+		<item>struct</item>
+		<item>then</item>
+		<item>type_info</item>
+		<item>type_of</item>
+		<item>union</item>
+		<item>using</item>
+		<item>while</item>
+		<item>xx</item>
+		<item>operator</item>
+		<item>remove</item>
+		<item>interface</item>
+		<item>no_inline</item>
+	</list>
+	<list name="types">
+		<item>__reg</item>
+		<item>bool</item>
+		<item>float</item>
+		<item>float32</item>
+		<item>float64</item>
+		<item>int</item>
+		<item>reg</item>
+		<item>s16</item>
+		<item>s32</item>
+		<item>s64</item>
+		<item>s8</item>
+		<item>string</item>
+		<item>u16</item>
+		<item>u32</item>
+		<item>u64</item>
+		<item>u8</item>
+		<item>void</item>
+		<item>v128</item>
+		<item>Any</item>
+		<item>Code</item>
+		<item>Type</item>
+	</list>
+	<list name="constants">
+		<item>context</item>
+		<item>it</item>
+		<item>it_index</item>
+		<item>null</item>
+		<item>true</item>
+		<item>false</item>
+		<item>temp</item>
+	</list>
+	<list name="directives">
+		<item>#add_context</item>
+		<item>#align</item>
+		<item>#as</item>
+		<item>#asm</item>
+		<item>#assert</item>
+		<item>#bake_arguments</item>
+		<item>#bake_constants</item>
+		<item>#bytes</item>
+		<item>#c_call</item>
+		<item>#caller_code</item>
+		<item>#caller_location</item>
+		<item>#char</item>
+		<item>#code</item>
+		<item>#compiler</item>
+		<item>#complete</item>
+		<item>#cpp_method</item>
+		<item>#cpp_return_type_is_non_pod</item>
+		<item>#deprecated</item>
+		<item>#dump</item>
+		<item>#dynamic_specialize</item>
+		<item>#elsewhere</item>
+		<item>#expand</item>
+		<item>#file</item>
+		<item>#filepath</item>
+		<item>#foreign</item>
+		<item>#library</item>
+		<item>#system_library</item>
+		<item>#if</item>
+		<item>#ifx</item>
+		<item>#import</item>
+		<item>#insert</item>
+		<item>#insert_internal</item>
+		<item>#intrinsic</item>
+		<item>#line</item>
+		<item>#load</item>
+		<item>#location</item>
+		<item>#modify</item>
+		<item>#module_parameters</item>
+		<item>#must</item>
+		<item>#no_abc</item>
+		<item>#no_aoc</item>
+		<item>#no_alias</item>
+		<item>#no_context</item>
+		<item>#no_padding</item>
+		<item>#no_reset</item>
+		<item>#place</item>
+		<item>#placeholder</item>
+		<item>#poke_name</item>
+		<item>#procedure_of_call</item>
+		<item>#program_export</item>
+		<item>#run</item>
+		<item>#runtime_support</item>
+		<item>#scope_export</item>
+		<item>#scope_file</item>
+		<item>#scope_module</item>
+		<item>#specified</item>
+		<item>#string</item>
+		<item>#symmetric</item>
+		<item>#this</item>
+		<item>#through</item>
+		<item>#type</item>
+		<item>#type_info_no_size_complaint</item>
+		<item>#type_info_none</item>
+		<item>#type_info_procedures_are_void_pointers</item>
+		<item>#compile_time</item>
+		<item>#no_debug</item>
+		<item>#procedure_name</item>
+		<item>#discard</item>
+		<item>#entry_point</item>
+		<item>#Context</item>
+		<item>#v2</item>
+	</list>
+	<list name="operations">
+		<item>-></item>
+			<item>!</item>
+			<item></item>
+			<item>|</item>
+			<item>||</item>
+			<item>|=</item>
+			<item>=</item>
+			<item>==</item>
+			<item>!=</item>
+			<item>%</item>
+			<item>%=</item>
+			<item>&lt;</item>
+			<item>&lt;&lt;lt</item>
+			<item>&lt;=</item>
+			<item>></item>
+		<item>>=</item>
+		<item>-</item>
+		<item>-=</item>
+		<item>---</item>
+		<item>*</item>
+		<item>*=</item>
+		<item>:</item>
+		<item>:=</item>
+		<item>::</item>
+		<item>/</item>
+		<item>+</item>
+		<item>+=</item>
+		<item>/=</item>
+		<item>&amp;</item>
+		<item>&amp;&amp;</item>
+		<item>&amp;=</item>
+		<item>~</item>
+		<item>^</item>
+		<item>^=</item>
+		<item>..</item>
+		<item>.*</item>
+	</list>
+	<contexts>
+		<context attribute="Normal Text" lineEndContext="#stay" name="Normal">
+		<DetectSpaces/>
+
+		<keyword String="keywords"   attribute="Keyword"    context="#stay"/>
+		<keyword String="types"      attribute="Type"       context="#stay"/>
+		<keyword String="constants"  attribute="Constant"   context="#stay"/>
+		<keyword String="directives" attribute="Directive"  context="#stay"/>
+
+		<Detect2Chars char="/" char1="/" attribute="Comment"      context="Comment"/>
+		<Detect2Chars char="/" char1="*" attribute="MultiComment" context="MultiComment"/>
+
+		<RegExpr String="\b0b[01]+\b"        attribute="Binary" context="#stay"/>
+		<RegExpr String="\b0o[0-7]+\b"       attribute="Octal"  context="#stay"/>
+		<RegExpr String="\b0x[0-9a-fA-F]+\b" attribute="Hex"    context="#stay"/>
+		<RegExpr String="\b0b([01]*[^01][0-9a-zA-Z_]*)?\b"               attribute="Error" context="#stay"/>
+		<RegExpr String="\b0o([0-7]*[^0-7][0-9a-zA-Z_]*)?\b"             attribute="Error" context="#stay"/>
+		<RegExpr String="\b0o([0-9a-fA-F]*[^0-9a-fA-F][0-9a-zA-Z_]*)?\b" attribute="Error" context="#stay"/>
+
+		<RegExpr String="\b[0-9]+\.[0-9]+\b"                   attribute="Float" context="#stay"/>
+		<RegExpr String="\b[0-9]+\.[0-9]+[eE][\+\-]?[0-9]+\b"  attribute="Float" context="#stay"/>
+		<RegExpr String="\b[0-9]+[eE][\+\-]?[0-9]+\b"          attribute="Float" context="#stay"/>
+
+		<RegExpr String="\b[0-9]+\b" attribute="Decimal" context="#stay"/>
+
+		<RegExpr String="\b[0-9]([eE][\+\-]?|[0-9a-zA-Z_\.])+\b" attribute="Error" context="#stay"/>
+
+		<RegExpr String="'(\\([abefnrtv\\'&quot;]|[0-7]{2}|x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{6})|[^'\\])'" attribute="Character" context="#stay" />
+		<RegExpr String="'[^']+'"                                                                                     attribute="Error"     context="#stay" />
+
+		<RegExpr String="\.[" attribute="Symbol" context="#stay" beginRegion="ArrayLiteral"/>
+		<RegExpr String="\]" attribute="Symbol" context="#stay" endRegion="ArrayLiteral"/>
+
+		<DetectChar char="{" attribute="Symbol" context="#stay" beginRegion="Brace"/>
+		<DetectChar char="}" attribute="Symbol" context="#stay" endRegion="Brace"/>
+
+		<DetectChar char="&quot;" attribute="String"    context="String" />
+		<DetectChar char=""      attribute="RawString" context="RawString" />
+
+		<RegExpr String="\b[_a-zA-Z][_a-zA-Z0-9]*\b" attribute="Normal Text"       context="#stay"/>
+		<RegExpr String="#[_a-zA-Z][_a-zA-Z0-9]*\b"  attribute="Compiler Function" context="#stay"/>
+	</context>
+
+	<context attribute="String" lineEndContext="#stay" name="String">
+		<RegExpr String="\\([abefnrtv\\'&quot;]|[0-7]{2}|x[0-9a-fA-F]{2}|u[0-9a-fA-F]{4}|U[0-9a-fA-F]{6})" attribute="Escape" context="#stay"/>
+		<DetectChar char="&quot;" attribute="String" context="#pop"/>
+	</context>
+
+	<context attribute="RawString" lineEndContext="#stay" name="RawString">
+		<DetectChar char="" attribute="RawString" context="#pop"/>
+	</context>
+
+	<context attribute="Comment" lineEndContext="#pop" name="Comment">
+		<IncludeRules context="##Alerts"/>
+	</context>
+
+	<context attribute="MultiComment" lineEndContext="#stay" name="MultiComment">
+		<IncludeRules context="##Alerts"/>
+		<Detect2Chars char="/" char1="*" attribute="MultiComment" context="MultiComment"/>
+		<Detect2Chars char="*" char1="/" attribute="MultiComment" context="#pop"/>
+	</context>
+	</contexts>
+	<itemDatas>
+		<itemData name="Normal Text"       defStyleNum="dsNormal"/>
+		<itemData name="Keyword"           defStyleNum="dsKeyword"  spellChecking="0"/>
+		<itemData name="Type"              defStyleNum="dsDataType" spellChecking="0"/>
+		<itemData name="Compiler Function" defStyleNum="dsBuiltIn"  spellChecking="0"/>
+		<itemData name="Constant"          defStyleNum="dsConstant" spellChecking="0"/>
+		<itemData name="Directive"         defStyleNum="dsPreprocessor" spellChecking="0"/>
+		<itemData name="Comment"           defStyleNum="dsComment"/>
+		<itemData name="MultiComment"      defStyleNum="dsComment"/>
+		<itemData name="Binary"            defStyleNum="dsBaseN"/>
+		<itemData name="Octal"             defStyleNum="dsBaseN"/>
+		<itemData name="Decimal"           defStyleNum="dsDecVal"/>
+		<itemData name="Hex"               defStyleNum="dsBaseN"/>
+		<itemData name="Float"             defStyleNum="dsFloat"/>
+		<itemData name="String"            defStyleNum="dsString"/>
+		<itemData name="RawString"         defStyleNum="dsString"/>
+		<itemData name="Escape"            defStyleNum="dsSpecialChar"/>
+		<itemData name="Character"         defStyleNum="dsChar"/>
+		<itemData name="Symbol"            defStyleNum="dsOperator"/>
+		<itemData name="Error"             defStyleNum="dsError"/>
+	</itemDatas>
+	</highlighting>
+	<general>
+		<comments>
+		<comment name="singleLine" start="//" />
+		<comment name="multiLine" start="/*" end="*/" region="CommentFolding"/>
+	</comments>
+	<keywords casesensitive="1" />
+	</general>
+</language>
